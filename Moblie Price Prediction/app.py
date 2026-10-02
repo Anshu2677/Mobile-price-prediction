@@ -4,7 +4,7 @@ from pathlib import path
 # ==============================
 # LOAD MODEL
 # ==============================
- BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent
 
 model = joblib.load(BASE_DIR / "models" / "mobile_price_model.pkl")
 
