@@ -1,10 +1,12 @@
 import streamlit as st
 import joblib
-
+from pathlib import path
 # ==============================
 # LOAD MODEL
 # ==============================
-model = joblib.load("models/mobile_price_model.pkl")
+ BASE_DIR = Path(__file__).resolve().parent
+
+model = joblib.load(BASE_DIR / "models" / "mobile_price_model.pkl")
 
 # ==============================
 # PAGE CONFIGURATION
