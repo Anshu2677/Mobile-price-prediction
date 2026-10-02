@@ -1,6 +1,6 @@
 import streamlit as st
 import joblib
-from pathlib import path
+from pathlib import Path
 # ==============================
 # LOAD MODEL
 # ==============================
